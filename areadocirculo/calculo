@@ -1,0 +1,12 @@
+//Escreva um programa que calcule a área de um círculo. Considere um raio inicializado com o valor 5 e pi declarado como uma constante 3.1416. Qual o tipo necessário para a variável resultado funcionar adequadamente? Pesquise como calcular o resultado utilizando a função pow(base, expoente) 
+#include <stdio.h>
+#define pi 3.1416
+#include <math.h>
+
+int main(void) {
+  float raio = 5, area;
+  area=pi*pow(raio,2);
+  printf("\n A área do círculo é: %.2f", area);
+  
+  return 0;
+}
