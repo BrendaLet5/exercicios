@@ -1,0 +1,19 @@
+//Fazer um codigo que imprima seu nome,sua idade e sua altura. Um em cada linha.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  char nome[50];// Ao pedir para colocar um nome, é necessário colocar numero entre as chaves
+  float altura=0;
+  int idade=0;
+  printf("\n Digite seu nome: ");
+  scanf("%s",nome);// o s é para mais de 1 caractere e não é necessário usar o "&" ao ler o nome da pessoa.
+  printf("\n Digite sua altura: ");
+  scanf("%f",&altura);
+  printf("\n Digite sua idade: ");
+  scanf("%d",&idade);
+  printf("\n Meu nome é Brenda, o seu é: %s",nome);
+  printf("\n Tenho 1.78 m de altura,você: %.2f m",altura);
+  printf("\n Tenho 24 anos, você tem: %d anos",idade);
+  return 0;
+}
