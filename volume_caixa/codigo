@@ -1,0 +1,17 @@
+//Ler os valores do comprimento, da largura e da altura de uma caixa, calcular e imprimin O seu volume.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  float comprimento,largura,altura,volume = 0;
+  printf("Digite o comprimento da caixa: ");
+  scanf("%f", &comprimento);
+  printf("Digite a largura da caixa: ");
+  scanf("%f", &largura);
+  printf("Digite a altura da caixa: ");
+  scanf("%f", &altura);
+  volume=comprimento*largura*altura;
+  printf("O volume da caixa é: %.2f",volume);
+  return 0;
+}
