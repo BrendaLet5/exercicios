@@ -8,8 +8,8 @@ int main(void) {
 int a1,N=0;
 printf("Digite um valor de N: ");
   scanf("%i",&N);
-  for(a1=1;a1<=N;a1++){
-    E+=1.0/a1;
+  for(a1=1;a1<=N;a1++){ //for loop should have three components: initialization, condition, and iteration.
+  E+=1.0/a1; // até que a1 seja igual à N será somado à expressão a fração "1.0/a1" (com 1 adicionado à a1)
   }
   printf("O resultado de E é: %.2f",E);
   return 0;
