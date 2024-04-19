@@ -1,0 +1,16 @@
+//Escrever um algoritmo que lé um valor N inteiro e positivo e que calcula e escreve o valor de E.E=1+1/2+1/3+...+1/N.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  float E=0;
+int a1,N=0;
+printf("Digite um valor de N: ");
+  scanf("%i",&N);
+  for(a1=1;a1<=N;a1++){
+    E+=1.0/a1;
+  }
+  printf("O resultado de E é: %.2f",E);
+  return 0;
+}
