@@ -1,0 +1,46 @@
+//Escreva um algoritmo que leia a matricula de um aluno e suas tres notas. Calcule a média ponderada do aluno, considerando que 0 peso para a maior nota seja 4 e para as duas restantes, 3. Mostre ao final a média calculada e uma mensagem "APROVADO" se a média for maior ou igual a 5 e "REPROVADO" se a média for menor que 5. Repita a operacao até que o codigo lido seja negativo.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  int matricula=0;
+  float media=0,nota1=0,nota2=0,nota3,maior,menor1,menor2=0;
+  printf("Digite a matrícula: ");
+  scanf("%i",&matricula);
+  
+  printf("Digite a primeira nota: ");
+  scanf("%f",&nota1);
+  printf("Digite a segunda nota: ");
+  scanf("%f",&nota2);
+  printf("Digite a terceira nota: ");
+  scanf("%f",&nota3);
+
+  
+  if ((nota1>nota2&&nota3)||(nota1>nota3&&nota2)){
+    maior=nota1;
+    menor1=nota2;
+    menor2=nota3;
+  }
+  if ((nota2>nota1&&nota3)||(nota2>nota3&&nota1)){
+    maior=nota2;
+    menor1=nota1;
+    menor2=nota3;
+  }
+  if ((nota3>nota1&&nota2)||(nota3>nota2&&nota1)){
+    maior=nota3;
+    menor1=nota1;
+    menor2=nota2;
+  }
+ 
+  media= ((maior*4)+(menor1*3)+(menor2*3))/10;
+  
+  if (media>=5){
+    printf("Aluno APROVADO matricula %i com media %.2f",matricula,media);
+  }
+  else {
+    printf("Aluno REPROVADO matricula %i com media %.2f",matricula,media);
+  }
+
+  return 0;
+}
