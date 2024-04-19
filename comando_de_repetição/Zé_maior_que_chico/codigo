@@ -1,0 +1,21 @@
+//Chico tem 1,50 metro e cresce 2 centimetros por ano, enquanto Zé tem 1,40 metro e cresce 3 centimetros por ano. Construa um algoritmo que calcule e imprima quantos anos serao necessarios para que Zé seja maior que Chico.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main(void) {
+  int ano=0,ano_total=0;
+  float ze,chico;
+  ze=1.40;
+  chico=1.50;
+  while (ze<chico){
+    ze+=0.03;
+    chico+=0.02;
+    ano_total=ano++;
+  }
+  printf("\nTotal de anos: %i",ano_total);
+  printf("\nA altura de Zé; %.3f",ze);
+  printf("\nA altura de Zé; %.3f",chico);
+  return 0;
+}
