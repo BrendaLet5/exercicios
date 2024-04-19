@@ -1,0 +1,27 @@
+//Escreva um algoritmo que leia 10 valores (usando a mesma variavel) e encontre o maior e o menor deles. Mostre o resultado.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  int t,a,maior,menor;
+  
+  printf("Digite o primeiro valor para a: ");
+  scanf("%d",&a);
+  maior=a; //faz diferença colocar maoior=a ou a=maior. noprimeiro voce atribui o valor de a à maiore na segunda o valor de maior é atribuido ao a.
+  menor=a;
+  for(t=2;t<=10;t++) {
+  printf("Digite outro valor para a: ");
+  scanf("%d",&a);
+  if(a>maior){
+    maior=a;//faz diferença colocar maoior=a ou a=maior. noprimeiro voce atribui o valor de a à maiore na segunda o valor de maior é atribuido ao a.
+  }
+  if(a<menor){
+  menor=a;
+  }
+  }
+  printf("\n O maior numero é: %i",maior);
+  printf("\n O menor numero é: %i",menor);
+  
+  return 0;
+}
