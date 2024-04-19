@@ -1,0 +1,10 @@
+//Fazer um algoritmo para gerar e imprimir o resultado do numero H, sendo H = 1+ 1/2 + 1/3 + 1/4 + 1/5.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+  float h=0;
+  h= 1+(1.0/2)+(1.0/3)+(1.0/4)+(1.0/5); //você precisa garantir que pelo menos um dos operandos seja um número de ponto flutuante.Ao dividir pelo menos um dos números por 1.0 (ou convertê-lo explicitamente para float), você garante que a divisão será tratada como uma divisão de ponto flutuante, e o resultado será calculado corretamente.
+  printf("A variavel h tem como resultado: %f",h);
+  return 0;
+}
