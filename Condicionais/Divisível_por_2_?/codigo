@@ -1,0 +1,21 @@
+ //Ler um numero inteiro e informar se ele é divisivel por 2.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  int x=0, divisao;
+  printf("Digite um número para verficar se é divisivel por 2: ");
+  scanf("%i",&x);
+  if( x % 2 == 0){ // Ele verifica se o número é divisível por 2,usando o operador de módulo %.
+                   // Se o resultado do operador de módulo for 0 (resto=0),isso significa que  
+                   // o número é divisível por 2.
+    divisao= x/2;
+    printf("\nO número é divisivel por 2 e tem como resultado: %i",divisao);
+  }
+  else {
+    printf("\nO número que digitou %i não é divisível por 2",x);
+  }
+    
+  return 0;
+}
