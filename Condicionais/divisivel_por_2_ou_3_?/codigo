@@ -1,0 +1,37 @@
+ //Ler um numero inteiro e informar se ele é divisivel por 2 ou por 3.
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) {
+  int x=0, divisao2=0,divisao3=0;
+  printf("Digite um número para verficar se é divisivel por 2 ou por 3: ");
+  scanf("%i",&x);
+  divisao2= x/2;
+  divisao3= x/3;
+  if (( x % 2 == 0) && (x % 3 == 0)){ 
+      printf("\nO número é divisivel por 2: %i e por 3: %i",divisao2,divisao3);
+    }
+    
+  else {
+    
+    if( x % 2 == 0){ //Ele verifica se o número é divisível por 2,usando o operador de módulo %
+                   // Se o resultado do operador de módulo for 0 (resto=0),isso significa que  
+                   // o número é divisível por 2.
+    divisao2= x/2;
+    printf("\nO número é divisivel por 2 e tem como resultado: %i",divisao2);
+    }
+    
+    else {
+      if ( x % 3 == 0){
+      divisao3= x/3;
+      printf("\nO número é divisivel por 3 e tem como resultado: %i",divisao3);
+      }
+      else{
+        printf("\nO número que digitou %i não é divisível por 2 nem por 3",x);
+      }
+  }
+  }
+  
+  return 0;
+}
