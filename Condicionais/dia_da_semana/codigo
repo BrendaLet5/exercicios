@@ -1,0 +1,29 @@
+ //Desenvolver um algoritmo para ler o número do dia da semana e imprimir o seu respectivo nome por extenso.Considerar onúmero 1 como domingo,2 para segunda etc.Caso o dia da semana não exista (menor do que 1 ou maior do que 7),exibir a mensagem Dia da semana inválido".
+
+#include <stdio.h>
+#include<math.h>
+#include<stdlib.h>
+
+int main(void) {
+  int dia;
+  printf("Digite o numero respectivo ao dia da semana, sendo 1- domingo e 7 sabado: ");
+  scanf("%i",&dia);
+  switch (dia){
+    case 1 : printf ("O dia da semana é: domingo");
+    break;
+    case 2 : printf ("O dia da semana é: segunda-feira");
+    break;
+    case 3 : printf ("O dia da semana é: terça-feira");
+    break;
+    case 4 : printf ("O dia da semana é: quarta-feira");
+    break;
+    case 5 : printf ("O dia da semana é: quinta-feira");
+    break;
+    case 6 : printf ("O dia da semana é: sexta-feira");
+    break;
+    case 7 : printf ("O dia da semana é: sábado");
+    break;
+    default : printf ("Dia da semana inválido");
+  }
+  return 0;
+}
