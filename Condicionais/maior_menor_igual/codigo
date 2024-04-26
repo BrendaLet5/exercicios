@@ -1,0 +1,23 @@
+//Ler dois numeros inteiros e informar se o primeiro valor lido é maior, menor ou igual ao segundo.
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main(void) {
+  int a=0,b=0,igual=0;
+  printf("Digite o primeiro numero: ");
+  scanf("%i%",&a);
+  printf("Digite o segundo numero: ");
+  scanf("%d%",&b);
+
+  if(a>b){
+    printf("\nO primeiro numero é maior que o segundo. %d > %d",a,b);
+  }
+  if(b>a){
+    printf("\nO segundo numero é maior que o primeiro. %d > %d",b,a);
+  }
+  if(a==b){
+    printf("\nO primeiro numero é igual ao segundo. %d = %d",a,b);
+  }
+  return 0;
+}
