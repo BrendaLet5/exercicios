@@ -1,0 +1,33 @@
+//Faça um programa para exibir a soma de duas matrizes quadradas 3 x 3. Deverá ser criado um procedimento para ler uma matriz (será chamado duas vezes com parâmetros diferentes) e um segundo procedimento que irá imprimir a soma das matrizes passadas como parâmetro.
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  int vetorA[3][3],vetorB[3][3],vetorC[3][3],i=0,j=0;
+  for(int i=0;i<3;i++){//linha
+    for(int j=0;j<3;j++){ //coluna
+     printf(" \nMatriz A: Digite o numero para a posição a%d;%d: ",i,j);
+      scanf("%d",&vetorA[i][j]);
+    }
+  } 
+  for(int i=0;i<3;i++){//linha
+    for(int j=0;j<3;j++){ //coluna
+     printf(" \nMatriz B: Digite o numero para a posição b%d;%d: ",i,j);
+      scanf("%d",&vetorB[i][j]);
+    }
+  } 
+  for(int i=0;i<3;i++){//linha
+    for(int j=0;j<3;j++){ //coluna
+    vetorC[i][j] = vetorA[i][j] + vetorB[i][j];
+    }
+  } 
+  
+  printf("\nA matriz soma: \n");
+  for(int i=0;i<3;i++){//linha
+    for(int j=0;j<3;j++){ //coluna
+      printf("%d ",vetorC[i][j]);
+    }
+    printf("\n");
+  } 
+  return 0;
+}
